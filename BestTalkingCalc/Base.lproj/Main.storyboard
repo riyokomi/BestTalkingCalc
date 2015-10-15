@@ -134,9 +134,6 @@
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fyy-bo-uOr"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juW-ru-KFB">
                                 <rect key="frame" x="116" y="495" width="90" height="55"/>
@@ -158,9 +155,6 @@
                                 <state key="normal" title="=">
                                     <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fY8-c9-dKh"/>
-                                </connections>
                             </button>
                             <pickerView contentMode="TopLeft" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rwp-Bz-Qyj">
                                 <rect key="frame" x="1" y="0.0" width="320" height="216"/>
