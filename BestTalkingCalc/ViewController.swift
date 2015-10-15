@@ -23,21 +23,43 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     var currentLang = ("en-US", "English","United States","American English ","🇺🇸")
     
     // calc related
-   // var currentNumber: Int = 100
     var currentString = ""
+    // var currentNumber: Int = 100
+    var firstNumber = 0
+    var secondNumber = 0
+    
+    var total = 0
+    var mode = 0
+    var valueString = ""
+    var lastButtonWasMode:Bool = false
+    
+    
+    
     
     //UI Elements
     @IBOutlet weak var labelNumberDisplay: UILabel!
     
     @IBAction func numberButtonPressed(sender: UIButton) {
         
-          // Save Data
-          let myString =  sender.titleLabel?.text
-          currentString = myString!
-     //     currentNumber = Int(currentString)!
+        // Save Data
+        let myString =  sender.titleLabel?.text
+        currentString = myString!
+
         
+        //Calc Code
+        if (valueString == "0" && myString == "0"){
+            return
+        }
         
+        valueString = valueString.stringByAppendingString(myString!)
+
+        // toInt()
+        total = Int(valueString)!
+        print("total is \(total)")
+
         // Go Do These:
+        labelNumberDisplay.text = "\(total)"
+
         speakThisString(currentString)
         updateLabelDisplayingNumbers()
     }
@@ -47,7 +69,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        labelNumberDisplay.text = "1000000000"
+        labelNumberDisplay.text = "🚶"
         
     }
 
