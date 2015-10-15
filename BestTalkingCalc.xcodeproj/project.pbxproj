@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CA3729F1BCFF2EB0054ED5E /* Screen Shot 2015-10-15 at 10.42.17 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA3729E1BCFF2EB0054ED5E /* Screen Shot 2015-10-15 at 10.42.17 AM.png */; settings = {ASSET_TAGS = (); }; };
 		6CBB1CBB1BC6EADD00C94C6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBB1CBA1BC6EADD00C94C6F /* AppDelegate.swift */; };
 		6CBB1CBD1BC6EADD00C94C6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBB1CBC1BC6EADD00C94C6F /* ViewController.swift */; };
 		6CBB1CC01BC6EADD00C94C6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CBB1CBE1BC6EADD00C94C6F /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6CA3729E1BCFF2EB0054ED5E /* Screen Shot 2015-10-15 at 10.42.17 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2015-10-15 at 10.42.17 AM.png"; sourceTree = "<group>"; };
 		6CBB1CB71BC6EADD00C94C6F /* BestTalkingCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestTalkingCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CBB1CBA1BC6EADD00C94C6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CBB1CBC1BC6EADD00C94C6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				6CBB1CBC1BC6EADD00C94C6F /* ViewController.swift */,
 				6CBB1CBE1BC6EADD00C94C6F /* Main.storyboard */,
 				6CBB1CC11BC6EADD00C94C6F /* Assets.xcassets */,
+				6CA3729E1BCFF2EB0054ED5E /* Screen Shot 2015-10-15 at 10.42.17 AM.png */,
 				6CBB1CC31BC6EADD00C94C6F /* LaunchScreen.storyboard */,
 				6CBB1CC61BC6EADD00C94C6F /* Info.plist */,
 			);
@@ -122,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CBB1CC51BC6EADD00C94C6F /* LaunchScreen.storyboard in Resources */,
+				6CA3729F1BCFF2EB0054ED5E /* Screen Shot 2015-10-15 at 10.42.17 AM.png in Resources */,
 				6CBB1CC21BC6EADD00C94C6F /* Assets.xcassets in Resources */,
 				6CBB1CC01BC6EADD00C94C6F /* Main.storyboard in Resources */,
 			);
@@ -283,6 +287,7 @@
 				6CBB1CCB1BC6EADD00C94C6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
