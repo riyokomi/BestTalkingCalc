@@ -12,18 +12,43 @@ import AVFoundation
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     //  ViewController Class-Wide Variables
+    
+    // Speach Related
     let mySpeechSynth = AVSpeechSynthesizer()
     
     var myRate: Float = 0.50
-    var myPitch: Float = 0.99
-    var myVolume: Float = 0.50
+    var myPitch: Float = 1.15
+    var myVolume: Float = 0.92
     
     var currentLang = ("en-US", "English","United States","American English ","🇺🇸")
+    
+    // calc related
+   // var currentNumber: Int = 100
+    var currentString = ""
+    
+    //UI Elements
+    @IBOutlet weak var labelNumberDisplay: UILabel!
+    
+    @IBAction func numberButtonPressed(sender: UIButton) {
+        
+          // Save Data
+          let myString =  sender.titleLabel?.text
+          currentString = myString!
+     //     currentNumber = Int(currentString)!
+        
+        
+        // Go Do These:
+        speakThisString(currentString)
+        updateLabelDisplayingNumbers()
+    }
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        labelNumberDisplay.text = "1000000000"
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,17 +76,24 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         currentLang = langCodeAll38[row]
-        speakThisString()
+        speakThisString(currentLang.3)
+    }
+
+
+    //MARK - Calc Functions
+    
+    func updateLabelDisplayingNumbers(){
+        labelNumberDisplay.text = currentString
     }
 
     
     //MARK - Speaking Machine
     
-    func speakThisString(){
+    func speakThisString(passedString: String){
         
         mySpeechSynth.stopSpeakingAtBoundary(AVSpeechBoundary.Immediate)
         
-        let myUtterance = AVSpeechUtterance(string: currentLang.3)
+        let myUtterance = AVSpeechUtterance(string: passedString)
         myUtterance.rate = myRate
         myUtterance.pitchMultiplier = myPitch
         myUtterance.volume = myVolume

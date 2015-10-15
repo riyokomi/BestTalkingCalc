@@ -20,125 +20,162 @@
                                 <rect key="frame" x="13" y="306" width="90" height="55"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="60"/>
                                 <state key="normal" title="1">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                     <color key="titleShadowColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DwG-D5-2Qu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWF-3m-yWd">
                                 <rect key="frame" x="217" y="306" width="90" height="55"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="60"/>
                                 <state key="normal" title="3">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6QY-pP-6ED"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfD-4D-Sd6">
                                 <rect key="frame" x="115" y="306" width="90" height="55"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="60"/>
                                 <state key="normal" title="2">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                     <color key="titleShadowColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nPv-QP-KC8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvl-ux-Gvx">
                                 <rect key="frame" x="14" y="369" width="90" height="55"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="60"/>
                                 <state key="normal" title="4">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1oo-QA-pJt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vs7-2X-0pP">
                                 <rect key="frame" x="218" y="369" width="90" height="55"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="60"/>
                                 <state key="normal" title="6">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TD6-Y6-M0B"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiK-j2-CcI">
                                 <rect key="frame" x="116" y="369" width="90" height="55"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="60"/>
                                 <state key="normal" title="5">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8aI-Ej-YR5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7b-hW-e1E">
                                 <rect key="frame" x="14" y="432" width="90" height="55"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="60"/>
                                 <state key="normal" title="7">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bcm-lS-nS6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbJ-bs-qlz">
                                 <rect key="frame" x="218" y="432" width="90" height="55"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="60"/>
                                 <state key="normal" title="9">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FrJ-Dy-XNc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2y-5P-QFf">
                                 <rect key="frame" x="116" y="432" width="90" height="55"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="60"/>
                                 <state key="normal" title="8">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xqn-hm-90w"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07z-1H-d4R">
                                 <rect key="frame" x="218" y="495" width="90" height="55"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="75"/>
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fyy-bo-uOr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juW-ru-KFB">
                                 <rect key="frame" x="116" y="495" width="90" height="55"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="60"/>
                                 <state key="normal" title="0">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kei-lh-Yer"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toE-N4-S4f">
                                 <rect key="frame" x="13" y="495" width="90" height="55"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="75"/>
                                 <state key="normal" title="=">
                                     <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fY8-c9-dKh"/>
+                                </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rwp-Bz-Qyj">
+                            <pickerView contentMode="TopLeft" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rwp-Bz-Qyj">
                                 <rect key="frame" x="1" y="0.0" width="320" height="216"/>
                                 <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="9sE-1F-ZnT"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="aCJ-1a-s3r"/>
                                 </connections>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hi" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a84-bW-nlj">
-                                <rect key="frame" x="14" y="180" width="295" height="110"/>
+                                <rect key="frame" x="13" y="183" width="296" height="110"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="110"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="110"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -148,6 +185,9 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="labelNumberDisplay" destination="a84-bW-nlj" id="SUg-DZ-mbs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
