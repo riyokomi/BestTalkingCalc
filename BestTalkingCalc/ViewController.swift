@@ -79,7 +79,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
 
     
-    //MARK - UIPickerView Methods
+    //MARK: - UIPickerView Methods
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -102,14 +102,14 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
 
 
-    //MARK - Calc Functions
+    //MARK: - Calc Functions
     
     func updateLabelDisplayingNumbers(){
         labelNumberDisplay.text = currentString
     }
 
     
-    //MARK - Speaking Machine
+    //MARK: - Speaking Machine
     
     func speakThisString(passedString: String){
         
@@ -127,7 +127,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     
-    //MARK - Data Model
+    //MARK: - Data Model
     
     // current lang array has known typos, to fix in future.
     var langCodeAll38 = [
