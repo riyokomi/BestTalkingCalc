@@ -11,29 +11,28 @@ import AVFoundation
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
-    //  ViewController Class-Wide Variables
-    
+
+    // MARK: - ViewController Class-Wide Variables
     // Speach Related
     let mySpeechSynth = AVSpeechSynthesizer()
-    
     var myRate: Float = 0.50
     var myPitch: Float = 1.15
     var myVolume: Float = 0.92
-    
     var currentLang = ("en-US", "English","United States","American English ","🇺🇸")
     
-    // calc related
+    
+    // Calc Related
     var currentString = ""
+    var total = 0
+    var mode = 0
+    var valueString = ""
+//    var lastButtonWasMode:Bool = false
+
     // var currentNumber: Int = 100
     var firstNumber = 0
     var secondNumber = 0
     
-    var total = 0
-    var mode = 0
-    var valueString = ""
-    var lastButtonWasMode:Bool = false
-    
-    
+
     
     
     //UI Elements
@@ -65,7 +64,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     
-    
+    //MARK: - ViewDidLoad & Memory Warning
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
