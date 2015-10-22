@@ -21,12 +21,11 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     var currentLang = ("en-US", "English","United States","American English ","🇺🇸")
     
     
-    // Calc Related
-    var currentString = ""
-    var total = 0
-    var mode = 0
-    var valueString = ""
-//    var lastButtonWasMode:Bool = false
+    // Calc Related  Based on Lynda.com Programming for Non-Programmers: iOS 8.  Thanks!
+    var total: Int = 0  // Used To hold the numeric values entered
+    var mode = 0   // stores mode button ( +, -, *, %.... )
+    var valueString: String  = ""  // The String Version of Total
+    var lastButtonWasMode:Bool = false  // Stores if mode button (above) was last button pressed
 
     // var currentNumber: Int = 100
     var firstNumber = 0
@@ -42,7 +41,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         // Save Data
         let myString =  sender.titleLabel?.text
-        currentString = myString!
+        valueString = myString!
 
         
         //Calc Code
@@ -59,7 +58,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         // Go Do These:
         labelNumberDisplay.text = "\(total)"
 
-        speakThisString(currentString)
+        speakThisString(valueString)
         updateLabelDisplayingNumbers()
     }
     
@@ -104,7 +103,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     //MARK: - Calc Functions
     
     func updateLabelDisplayingNumbers(){
-        labelNumberDisplay.text = currentString
+        labelNumberDisplay.text = valueString
     }
 
     
