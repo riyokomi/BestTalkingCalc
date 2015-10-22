@@ -18,24 +18,23 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     var myRate: Float = 0.50
     var myPitch: Float = 1.15
     var myVolume: Float = 0.92
-    var currentLang = ("en-US", "English","United States","American English ","🇺🇸")
+    var currentLang = ("th-TH", "English","United States","American English ","🇺🇸")
     
     
-    
+    // MARK: Calc Function Related
     // Calc Related  Based on Lynda.com Programming for Non-Programmers: iOS 8.  Thanks!
     var total: Int = 0  // Used To hold the numeric values entered
     var mode = 0   // stores mode button ( +, -, *, %.... )
     var valueString: String  = ""  // The String Version of Total
     var lastButtonWasMode:Bool = false  // Stores if mode button (above) was last button pressed
-  
-
+    
+    //MARK:   UIPickerView Outlets
+    @IBOutlet weak var myLangPicker: UIPickerView!
     
     //MARK:   Calc UI Outlets
     @IBOutlet weak var labelNumberDisplay: UILabel!
-    
 
     //MARK:  Calc UI Actions
-    
     @IBAction func numberButtonPressed(sender: UIButton) {
         
         // Save Data
@@ -61,44 +60,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         updateLabelDisplayingNumbers()
     }
     
-    
-    //MARK: - ViewDidLoad & Memory Warning
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        labelNumberDisplay.text = "🚶"
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    
-    //MARK: - UIPickerView Methods
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return langCodeAll38.count
-    }
-    
-    
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        
-        let myString = "\(langCodeAll38[row].4) \(langCodeAll38[row].3)"
-        
-        return myString
-    }
-    
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        currentLang = langCodeAll38[row]
-        speakThisString(currentLang.3)
-    }
-
-
     //MARK: - Calc Functions
     
     func updateLabelDisplayingNumbers(){
@@ -122,6 +83,48 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         
     }
+    //MARK: - ViewDidLoad & Memory Warning
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        labelNumberDisplay.text = "🚶"
+        speakThisString("🚶")
+        myLangPicker.showsSelectionIndicator = true
+        myLangPicker.selectRow(20, inComponent: 0, animated: true)
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    //MARK: - Langugage UIPickerView Methods
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return langCodeAll38.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        
+        pickerView.showsSelectionIndicator = true
+        
+        let myString = "\(langCodeAll38[row].4) \(langCodeAll38[row].3)"
+        
+        return myString
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        currentLang = langCodeAll38[row]
+        speakThisString(currentLang.3)
+    }
+
+    
+
     
     
     //MARK: - Data Model

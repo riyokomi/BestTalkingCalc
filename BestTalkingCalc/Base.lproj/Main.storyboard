@@ -181,6 +181,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="labelNumberDisplay" destination="a84-bW-nlj" id="SUg-DZ-mbs"/>
+                        <outlet property="myLangPicker" destination="Rwp-Bz-Qyj" id="eGe-oi-qVB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
