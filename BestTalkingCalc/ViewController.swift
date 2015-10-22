@@ -13,7 +13,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 
 
     // MARK: - ViewController Class-Wide Variables
-    // Speach Related
+    // MARK: Speach Related
     let mySpeechSynth = AVSpeechSynthesizer()
     var myRate: Float = 0.50
     var myPitch: Float = 1.15
@@ -21,28 +21,27 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     var currentLang = ("en-US", "English","United States","American English ","🇺🇸")
     
     
+    
     // Calc Related  Based on Lynda.com Programming for Non-Programmers: iOS 8.  Thanks!
     var total: Int = 0  // Used To hold the numeric values entered
     var mode = 0   // stores mode button ( +, -, *, %.... )
     var valueString: String  = ""  // The String Version of Total
     var lastButtonWasMode:Bool = false  // Stores if mode button (above) was last button pressed
-
-    // var currentNumber: Int = 100
-    var firstNumber = 0
-    var secondNumber = 0
-    
+  
 
     
-    
-    //UI Elements
+    //MARK:   Calc UI Outlets
     @IBOutlet weak var labelNumberDisplay: UILabel!
+    
+
+    //MARK:  Calc UI Actions
     
     @IBAction func numberButtonPressed(sender: UIButton) {
         
         // Save Data
         let myString =  sender.titleLabel?.text
         valueString = myString!
-
+        
         
         //Calc Code
         if (valueString == "0" && myString == "0"){
@@ -50,14 +49,14 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         }
         
         valueString = valueString.stringByAppendingString(myString!)
-
+        
         // toInt()
         total = Int(valueString)!
         print("total is \(total)")
-
+        
         // Go Do These:
         labelNumberDisplay.text = "\(total)"
-
+        
         speakThisString(valueString)
         updateLabelDisplayingNumbers()
     }
