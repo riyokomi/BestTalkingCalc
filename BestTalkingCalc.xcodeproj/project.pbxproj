@@ -98,6 +98,7 @@
 				TargetAttributes = {
 					6CBB1CB61BC6EADD00C94C6F = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 58XU3V35UK;
 					};
 				};
 			};
@@ -250,7 +251,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BestTalkingCalc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yuryg.BestTalkingCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -261,7 +264,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BestTalkingCalc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yuryg.BestTalkingCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
