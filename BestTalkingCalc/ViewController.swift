@@ -18,7 +18,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     var myRate: Float = 0.50
     var myPitch: Float = 1.15
     var myVolume: Float = 0.92
-    var currentLang = ("th-TH", "English","United States","American English ","🇺🇸")
+    var currentLang = ("en-US", "English","United States","American English ","🇺🇸")
     
     
     // MARK: Calc Function Related
@@ -83,15 +83,37 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         
     }
+    @IBAction func lottoButtonPressed(sender: UIButton) {
+       
+        myLangPicker.selectRow(lottoSpin(), inComponent: 0, animated: true)
+        myLangPicker.selectedRowInComponent(<#T##component: Int##Int#>)
+            print("lottoSpin:  \(lottoSpin())")
+        
+        speakThisString(currentLang.3)
+        
+    }
+    
     //MARK: - ViewDidLoad & Memory Warning
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        labelNumberDisplay.text = "🚶"
-        speakThisString("🚶")
-        myLangPicker.showsSelectionIndicator = true
-        myLangPicker.selectRow(20, inComponent: 0, animated: true)
+       
+        let myWelcomeString = "🏪 🚶 🙄"
+        labelNumberDisplay.text = myWelcomeString
+       
+//        myLangPicker.showsSelectionIndicator = true
+        myLangPicker.selectRow(lottoSpin(), inComponent: 0, animated: true)
         
+        
+        print("lottoSpin:  \(lottoSpin())")
+        speakThisString(myWelcomeString)
+        
+    }
+    
+    func lottoSpin()-> Int {
+        let index = 1 + random() %  langCodeAll38.count
+        return index
+    
     }
     
     override func didReceiveMemoryWarning() {
