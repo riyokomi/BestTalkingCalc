@@ -86,7 +86,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBAction func lottoButtonPressed(sender: UIButton) {
        
         myLangPicker.selectRow(lottoSpin(), inComponent: 0, animated: true)
-        myLangPicker.selectedRowInComponent(<#T##component: Int##Int#>)
+        myLangPicker.selectedRowInComponent(lottoSpin())
             print("lottoSpin:  \(lottoSpin())")
         
         speakThisString(currentLang.3)
