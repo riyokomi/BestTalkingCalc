@@ -23,7 +23,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     // MARK: Calc Function Related
     // Calc Related  Based on Lynda.com Programming for Non-Programmers: iOS 8.  Thanks!
-    var total: Int = 0  // Used To hold the numeric values entered
+    var total: Double = 0  // Used To hold the numeric values entered
     var mode = 0   // stores mode button ( +, -, *, %.... )
     var valueString: String  = ""  // The String Version of Total
     var lastButtonWasMode:Bool = false  // Stores if mode button (above) was last button pressed
@@ -50,7 +50,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         valueString = valueString.stringByAppendingString(myString!)
         
         // toInt()
-        total = Int(valueString)!
+        total = Double(valueString)!
         print("total is \(total)")
         
         // Go Do These:
@@ -85,9 +85,13 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     @IBAction func lottoButtonPressed(sender: UIButton) {
        
-        myLangPicker.selectRow(lottoSpin(), inComponent: 0, animated: true)
-        myLangPicker.selectedRowInComponent(<#T##component: Int##Int#>)
+        let randomNumberInLangArray = lottoSpin()
+        myLangPicker.selectRow(randomNumberInLangArray, inComponent: 0, animated: true)
+        currentLang = langCodeAll38[randomNumberInLangArray]
+
             print("lottoSpin:  \(lottoSpin())")
+        
+    
         
         speakThisString(currentLang.3)
         
