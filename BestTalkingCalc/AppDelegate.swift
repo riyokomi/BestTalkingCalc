@@ -1,10 +1,14 @@
 //
 //  AppDelegate.swift
 //  BestTalkingCalc
+
+//  Created by YuryG
+//  Created between 2015-2016 for the Public Domain and as an educational resource. 
 //
-//  Created by GrownYoda on 10/8/15.
-//  Copyright © 2015 yuryg. All rights reserved.
-//
+//  Note: This project demo's only "Number Talking Features". 
+//        All Caculator features are used from http://www.lynda.com/Swift-tutorials/Building-Note-Taking-App-iOS-9-Swift/
+//        Thanks to Todd Perkins http://www.lynda.com/Todd-Perkins/118-1.html for Any/All Calculator functonality. 
+//        Above video and this project, allow you to assemble a "Talking Calcuator"//
 
 import UIKit
 
